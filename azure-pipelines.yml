@@ -37,6 +37,4 @@ steps:
     command: 'buildAndPush'
     Dockerfile: 'Dockerfile'
     containerRegistry: 'dockertest'
-    tags: |
-      $(tag)
-      latest
+    tags: latest
