@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk15:ubi
+FROM openjdk:17-oracle
 ENV APP_HOME=/usr/app/
 WORKDIR $APP_HOME
 ARG JAR_FILE=/build/libs/*-SNAPSHOT.jar
