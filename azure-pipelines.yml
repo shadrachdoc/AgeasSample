@@ -9,6 +9,8 @@ pool:
   name: Default
   vmImage: Agent
 
+variables:
+  tag: '$(Build.BuildId)'
 
 steps:
 - task: Gradle@2
@@ -37,4 +39,6 @@ steps:
     command: 'buildAndPush'
     Dockerfile: 'Dockerfile'
     containerRegistry: 'dockertest'
-    tags: latest
+    tags: |
+      $(tag)
+      latest
