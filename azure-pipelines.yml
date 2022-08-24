@@ -14,3 +14,11 @@ variables:
 
 steps:
   - template: Gradle.yaml
+
+- task: SonarQubePrepare@5
+  inputs:
+    SonarQube: 'sample-sonar'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: 'migra2356_Sampleproject_AYLPL14qVoNnHTT-c7K4'
+    cliSources: '.'
