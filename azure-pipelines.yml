@@ -13,8 +13,7 @@ variables:
   tag: '$(Build.BuildId)'
 
 steps:
-  - template: Gradle.yaml
-
+- template: Gradle.yaml
 - task: SonarQubePrepare@5
   inputs:
     SonarQube: 'sample-sonar'
