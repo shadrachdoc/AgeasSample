@@ -2,6 +2,6 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: '*.jar'
-    publishLocation: 'FilePath'
-    TargetPath: './build/libs/'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+    StoreAsTar: true
