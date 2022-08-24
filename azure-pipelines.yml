@@ -14,4 +14,4 @@ variables:
 
 steps:
 - template: Gradle.yaml
-- template: 
+- template: sonar.yaml
