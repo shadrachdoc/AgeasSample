@@ -10,8 +10,8 @@ sourceCompatibility = '17'
 
 repositories {
     maven {
-    url 'https://pkgs.dev.azure.com/migra56789/migra2356/_packaging/sampleproject/maven/v1'
-    name 'sampleproject'
+    url 'https://pkgs.dev.azure.com/migra56789/_packaging/migra56789/maven/v1'
+    name 'migra56789'
     authentication {
         basic(BasicAuthentication)
     }
