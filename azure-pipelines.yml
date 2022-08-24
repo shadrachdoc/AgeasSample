@@ -13,7 +13,7 @@ variables:
   tag: '$(Build.BuildId)'
 
 steps:
-- template: Gradle.yaml
+  - template: Gradle.yaml
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
