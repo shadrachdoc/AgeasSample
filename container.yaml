@@ -1,0 +1,11 @@
+steps:
+- task: Docker@2
+  inputs:
+    
+    repository: 'shadrach85/mycontainer'
+    command: 'buildAndPush'
+    Dockerfile: 'Dockerfile'
+    containerRegistry: 'dockertest'
+    tags: |
+      $(tag)
+      latest
