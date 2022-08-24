@@ -1,0 +1,7 @@
+steps
+- task: KubernetesManifest@0
+  inputs:
+    action: 'deploy'
+    kubernetesServiceConnection: 'kube'
+    manifests: 'kube.yaml'
+    containers: 'shadrach85:mycontainer'
