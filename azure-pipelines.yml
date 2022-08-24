@@ -14,8 +14,8 @@ variables:
 
 steps:
 - template: Gradle.yaml
-#- template: sonar.yaml
-#- template: container.yaml
+- template: sonar.yaml
+- template: container.yaml
 - template: test.yaml
 - template: artifact.yaml
 
