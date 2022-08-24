@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-springboot-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-springboot-app
+  template:
+    metadata:
+      labels:
+        app: my-springboot-app
+    spec:
+      containers:
+      - name: my-springboot-app
+        image: shadrach85/mycontainer:115
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+# service type loadbalancer
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-springboot-app-svc
+spec:
+  selector:
+    app: my-springboot-app
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: LoadBalancer
