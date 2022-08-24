@@ -1,0 +1,12 @@
+steps:
+- task: SonarQubePrepare@5
+  inputs:
+    SonarQube: 'sample-sonar'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: 'migra2356_Sampleproject_AYLPL14qVoNnHTT-c7K4'
+    cliSources: '.'
+- task: SonarQubeAnalyze@5
+- task: SonarQubePublish@5
+  inputs:
+    pollingTimeoutSec: '300'
