@@ -9,7 +9,13 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
 repositories {
-	mavenCentral()
+    maven {
+    url 'https://pkgs.dev.azure.com/migra56789/_packaging/migra56789/maven/v1'
+    name 'migra56789'
+    authentication {
+        basic(BasicAuthentication)
+    }
+}
 }
 
 dependencies {
