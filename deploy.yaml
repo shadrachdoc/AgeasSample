@@ -1,4 +1,4 @@
-steps
+steps:
 - task: KubernetesManifest@0
   inputs:
     action: 'deploy'
