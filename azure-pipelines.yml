@@ -18,4 +18,3 @@ steps:
 - template: container.yaml
 - template: test.yaml
 - template: artifact.yaml
-
