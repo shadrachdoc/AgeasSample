@@ -17,3 +17,4 @@ steps:
 #- template: sonar.yaml
 #- template: container.yaml
 - template: test.yaml
+- template: artifact.yaml
