@@ -6,6 +6,10 @@ steps:
     configMode: 'manual'
     cliProjectKey: 'migra2356_Sampleproject_AYLPL14qVoNnHTT-c7K4'
     cliSources: '.'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner, 
+      # Put one key=value per line, example:
+       sonar.exclusions=**/*.java
 - task: SonarQubeAnalyze@5
 - task: SonarQubePublish@5
   inputs:
