@@ -14,9 +14,9 @@ variables:
 
 steps:
 - template: Gradle.yaml
-- template: sonar.yaml
-- template: container.yaml
+#- template: sonar.yaml
+#- template: container.yaml
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'JaCoCo'
-    summaryFileLocation: '.'
+    summaryFileLocation: 
