@@ -1,3 +1,4 @@
+Steps:
 - task: Gradle@2
   inputs:
     workingDirectory: ''
