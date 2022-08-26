@@ -17,6 +17,7 @@ steps:
 - template: sonar.yaml
   parameters: 
     cliProjectKey: 'migra2356_Sampleproject_AYLPL14qVoNnHTT-c7K4'
+    SonarQube: 'sample-sonar'
 - template: container.yaml
 - template: test.yaml
 - template: artifact.yaml
