@@ -4,7 +4,7 @@ steps:
     SonarQube: 'sample-sonar'
     scannerMode: 'CLI'
     configMode: 'manual'
-    cliProjectKey: 'migra2356_Sampleproject_AYLPL14qVoNnHTT-c7K4'
+    cliProjectKey: ${{ parameters.cliProjectKey }}
     cliSources: '.'
     extraProperties: |
       # Additional properties that will be passed to the scanner, 
