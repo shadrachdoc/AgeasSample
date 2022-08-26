@@ -1,7 +1,7 @@
 steps:
 - task: SonarQubePrepare@5
   inputs:
-    SonarQube: ${{ parameters.sample-sonar }}
+    SonarQube: ${{ parameters.SonarQube }}
     scannerMode: 'CLI'
     configMode: 'manual'
     cliProjectKey: ${{ parameters.cliProjectKey }}
