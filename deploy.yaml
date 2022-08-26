@@ -2,6 +2,6 @@ steps:
 - task: KubernetesManifest@0
   inputs:
     action: 'deploy'
-    kubernetesServiceConnection: 'kube'
+    kubernetesServiceConnection: ${{ parameters.kubernetesServiceConnection }}
     manifests: 'kube.yaml'
-    containers: 'shadrach85:mycontainer'
+    containers: ${{ parameters.containers }}
