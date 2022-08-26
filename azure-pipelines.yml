@@ -19,6 +19,9 @@ steps:
     cliProjectKey: 'migra2356_Sampleproject_AYLPL14qVoNnHTT-c7K4'
     SonarQube: 'sample-sonar'
 - template: container.yaml
+  parameters:
+    repository: 'shadrach85/mycontainer'
+    containerRegistry: 'dockertest'
 - template: test.yaml
 - template: artifact.yaml
 - template: deploy.yaml
