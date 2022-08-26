@@ -2,10 +2,10 @@ steps:
 - task: Docker@2
   inputs:
     
-    repository: 'shadrach85/mycontainer'
+    repository: ${{ parameters.repository }}
     command: 'buildAndPush'
     Dockerfile: 'Dockerfile'
-    containerRegistry: 'dockertest'
+    containerRegistry: ${{ parameters.containerRegistry }}
     tags: |
       $(tag)
       latest
