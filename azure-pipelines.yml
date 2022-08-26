@@ -14,9 +14,9 @@ variables:
 
 steps:
 - template: Gradle.yaml
+- template: sonar.yaml
   parameters: 
     cliProjectKey: 'migra2356_Sampleproject_AYLPL14qVoNnHTT-c7K4'
-- template: sonar.yaml
 - template: container.yaml
 - template: test.yaml
 - template: artifact.yaml
