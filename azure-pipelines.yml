@@ -25,3 +25,6 @@ steps:
 - template: test.yaml
 - template: artifact.yaml
 - template: deploy.yaml
+  parameters:
+    kubernetesServiceConnection: 'kube'
+    containers: 'shadrach85:mycontainer'
